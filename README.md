@@ -4,21 +4,21 @@
 <a href="https://iplab.dmi.unict.it/"><img src="img/iplab.png" width="9%" hspace="50" target="_blank"></a>
 <br><br>
 
-<h1  style="font-family: Arial;  font-size: 40px;"><b>Computational data analysis for first quantization estimation on JPEG double compressed images</b></h1><br><br>
+<h1  style="font-family: Arial;  font-size: 40px;"><b>Computational data analysis for first quantization estimation on JPEG double compressed images</b></h1>
 
 <div style="font-size:15px; color:black"><b><a href="https://www.micc.unifi.it/icpr2020/" target="_blank">In Proceedings of the International Conference on Pattern Recognition</a></b></div>
 <br>
 
-<font size="5px" color="black"><b>Sebastiano Battiato<sup>1,2</sup>, Oliver Giudice<sup>2,3</sup>, Francesco Guarnera<sup>1,2</sup>, Giovanni Puglisi<sup>4</sup></b></font><br>
+<div style="font-size:15px; color:black"><b>Sebastiano Battiato<sup>1,2</sup>, Oliver Giudice<sup>2,3</sup>, Francesco Guarnera<sup>1,2</sup>, Giovanni Puglisi<sup>4</sup></b></div>
 <br>
-<font size="2px" color="black"><sup><b>1</b></sup> <em>Department of Mathematics and Computer Science, University of Catania, Viale Andrea Doria 6, Catania 95125, Italy</em><br>
+<div style="font-size:12px; color:black"><sup><b>1</b></sup> <em>Department of Mathematics and Computer Science, University of Catania, Viale Andrea Doria 6, Catania 95125, Italy</em><br>
 	<sup><b>2</b></sup> <em>iCTLab s.r.l. Spinoff of University of Catania, Italy</em><br>
 	<sup><b>3</b></sup> <em>Banca d'Italia, Rome, Italy</em><br>
 	<sup><b>4</b></sup> <em>Department of Mathematics and Computer Science, University of Cagliari, Via Ospedale 72, Cagliari 09124, Italy</em><br>
-	<br><br>
+	<br>
 	<b>battiato@dmi.unict.it, oliver.giudice@bancaditalia.it, francesco.guarnera@unict.it, puglisi@unica.it</b>
 	<br><br>
-
+</div>
 <div style="text-align: center; background-color: cornsilk; border-radius: 10px;margin-left: 20%;margin-right: 20%;width: 60%">
 
 <center>
