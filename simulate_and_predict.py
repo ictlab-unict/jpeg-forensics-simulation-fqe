@@ -3,6 +3,7 @@ import numpy as np
 from PIL import Image
 import subprocess
 import os
+import argparse
 
 
 def coeff_zigzag_to_column_to_column(coeff):
@@ -145,10 +146,10 @@ def get_coefficients_first_compression(img_to_analyze,max_coeff,prints=True):
     h_QF1_all = np.zeros((len(QF1_range), len(_range) - 1, len(coeff_vec)))
 
     if prints:
-        print("\n\nSTART DOUBLE COMPRESSION SUMULATIONS (max_coeff="+str(max_coeff)+")\n")
+        print("START DOUBLE COMPRESSION SIMULATIONS (max_coeff="+str(max_coeff)+")")
     for q1_value,QF1 in enumerate(QF1_range):
         if prints:
-            print("SIMULATION q1 : "+str(QF1)+"\n")
+            print("SIMULATION q1 : "+str(QF1))
         #q1_value: indice
         #QF1 : valore (pari a q1_value+1)
 
@@ -194,7 +195,7 @@ def get_coefficients_first_compression(img_to_analyze,max_coeff,prints=True):
             h_QF1_all[q1_value, :, coeff] = h_QF1
 
     if prints:
-        print("\n\nEXTRACT IMAGE REAL INFO\n")
+        print("EXTRACT IMAGE REAL INFO")
     #immagine da analizzare
     img_ref = Image.open(img_to_analyze)
     # estraggo la seconda tabella di quantizzazione
@@ -203,7 +204,7 @@ def get_coefficients_first_compression(img_to_analyze,max_coeff,prints=True):
     coeffs_distribution_real = get_dct_coeffs_distribution(img_to_analyze, width, height)
 
     if prints:
-        print("\n\nSTART COMPARISON\n\n")
+        print("START COMPARISON")
     D_all = []
     for coeff in coeff_vec:
 
@@ -236,17 +237,25 @@ def get_coefficients_first_compression(img_to_analyze,max_coeff,prints=True):
 
     return q1_matrix
 
+def is_valid_file(parser, arg):
+    if not os.path.exists(arg):
+        parser.error("The file %s does not exist!" % arg)
+    else:
+        return arg
 
 if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description='Simulate to estimate first compression quantization.')
+    parser.add_argument("-i", dest="filename", required=True,
+        help="input JPEG file", type=lambda x: is_valid_file(parser, x))
+    parser.add_argument("-n", dest="max_coeff", default=19, required=False,
+        help="max coefficient expected between first 15 coeffs")
+    args = parser.parse_args()
 
     #immagini compresse con tabelle standard QF1=60 e QF2=90 quindi Q1={}
-    img='128_128.jpg'
-    #img='4288_2848.jpg'
-
-    #massimo coefficiente possibile tra i primi 15 per QF1=60
-    max_coeff=19
+    img = args.filename
+    max_coeff = args.max_coeff
 
     #restituisce i primi 15 coefficienti
     FQE_15_coeffs=get_coefficients_first_compression(img,max_coeff,True)
-    print("\nPREDICTED q1 (first 15):\n")
+    print("PREDICTED q1 (first 15):")
     print(FQE_15_coeffs)
