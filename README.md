@@ -19,27 +19,27 @@
 	<b>battiato@dmi.unict.it, oliver.giudice@bancaditalia.it, francesco.guarnera@unict.it, puglisi@unica.it</b>
 	<br><br>
 
-	<div style="text-align: center; background-color: cornsilk; border-radius: 10px;margin-left: 20%;margin-right: 20%;width: 60%">
+<div style="text-align: center; background-color: cornsilk; border-radius: 10px;margin-left: 20%;margin-right: 20%;width: 60%">
 
-		<br><br>
-		<center>
-			<a href="https://ieeexplore.ieee.org/document/9412528"><font size="5px" ><b>DOWNLOAD PAPER</b></font></a>
-		</center>
-		<br><br>
-		<div style="text-align:left !important;margin-left:20%">
-			@article{battiato2021computational,<br>
-			<span style="margin-left: 2%">title={Computational data analysis for first quantization estimation on JPEG double compressed images},</span><br>
-			<span style="margin-left: 2%">author={Battiato, Sebastiano and Giudice, Oliver and Guarnera, Francesco and Puglisi, Giovanni},</span><br>
-			<span style="margin-left: 2%">booktitle={2020 25th International Conference on Pattern Recognition (ICPR)},</span><br>
-			<span style="margin-left: 2%">pages={5951--5958}</span><br>
-			<span style="margin-left: 2%">year={2021}</span><br>
-			<span style="margin-left: 2%">organization = {IEEE}</span><br>
-			}
-		</div>
+<br><br>
+<center>
+<a href="https://ieeexplore.ieee.org/document/9412528"><font size="5px" ><b>DOWNLOAD PAPER</b></font></a>
+</center>
+<br><br>
+<div style="text-align:left !important;margin-left:20%">
+	@article{battiato2021computational,<br>
+<span style="margin-left: 2%">title={Computational data analysis for first quantization estimation on JPEG double compressed images},</span><br>
+<span style="margin-left: 2%">author={Battiato, Sebastiano and Giudice, Oliver and Guarnera, Francesco and Puglisi, Giovanni},</span><br>
+<span style="margin-left: 2%">booktitle={2020 25th International Conference on Pattern Recognition (ICPR)},</span><br>
+<span style="margin-left: 2%">pages={5951--5958}</span><br>
+<span style="margin-left: 2%">year={2021}</span><br>
+<span style="margin-left: 2%">organization = {IEEE}</span><br>
+	}
+</div>
 
 
 
-		<br><br>
+<br><br>
 
 
 
