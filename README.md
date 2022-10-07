@@ -40,40 +40,54 @@
 
 <br><br>
 
-# Primary JPEG Quantization Estimation 
+# JPEG First Quantization Estimation 
 
-This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public
-License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later
-version. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the
-implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for
-more details. You should have received a copy of the GNU General Public License along with this program.
-If not, see <http://www.gnu.org/licenses/>.
+This program is free software: it is distributed WITHOUT ANY WARRANTY.
 
 If you are using this software, please cite:
 
-Y.Niu, B. Tondi, Y.Zhao, M.Barni:
-“Primary Quantization Matrix Estimation of Double Compressed JPEG Images via CNN",
-IEEE Signal Processing Letters, 2019, November
-Available on ArXiv: [arXiv preprint:1908.04259](https://arxiv.org/abs/1908.04259)
+Battiato, Sebastiano and Giudice, Oliver and Guarnera, Francesco and Puglisi, Giovanni:
+“Computational data analysis for first quantization estimation on JPEG double compressed images",
+In Proceedings of the International Conference on Pattern Recognition, 2021
     
-The software estimates the primary quantization matrix of a Double JPEG image (either aligned and not aligned) 
-based on a Convolutional Neural Network. The CNN-based estimator works with a 64x64 input patch size. 
-The first 15 coefficients of the primary quantization matrix, in zig zag order, are returned by the software.
+The software estimates the first 15 quantization factors (in zig-zag order) of an aligned Double compressed JPEG image.
 
-A model is trained for a fixed quality of the second JPEG compression QF2.
+Given the double JPEG compressed image <b>I</b>, the software read the second quantization matrix <b>Q2</b> from <b>I</b> and it simulate all possible double compressions 
+employing a constant matrix for each value between 1 and <b>max</b> (set inside the file v1.py) for the first compression and <b>Q2</b> for the second one.
+
+128_128.jpg: 128X128 image compressed with QF1=60 e QF2=90
+
+4288_2848.jpg: 4288X2484 image compressed with QF1=60 e QF2=90
+
+The JPEG files (128_128.jpg and 4288_2848.jpg) Have the first 15 quantization factors (in zig-zag order) equal to [13, 9, 10, 11, 10, 8, 13, 11, 10, 11, 14, 14, 13, 15, 19]
+
+v1.py: python file to predict the quantization factor (function get_coefficients_first_compression in the main).
+
+jpeg: executable file for DCT values extraction from file (without IDCT); it needs the executable permissions.
+
+
+We tested our codes on Python 2.7 and Python 3 under Ubuntu 16.04 and 18.04 (64 bit).
 
 <br>
 
-## Installing dependencies
+## Try the code
 
-To install the packages required by our software, you may use the provided *requirements.txt*:
+The libraries needed to execute the code are:
 ```
-cd CnnJpegPrimaryQuantizationEstimation
-python3 -m venv myvenv
-source myvenv/bin/activate
-pip install -r resources/requirements.txt
+sys
+numpy
+PIL
+subprocess
+os
 ```
-We tested our codes on Python 3.5 and Python 3.6 under Ubuntu 16.04 and 18.04 (64 bit).
+
+
+
+To try our software, execute:
+```
+python3 -v1.py
+```
+
 
 
 
