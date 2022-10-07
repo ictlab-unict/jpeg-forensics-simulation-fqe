@@ -72,21 +72,10 @@ We tested our codes on Python 2.7 and Python 3 under Ubuntu 16.04 and 18.04 (64 
 
 ## Try the code
 
-The libraries needed to execute the code are:
-```
-sys
-numpy
-PIL
-subprocess
-os
-```
+Just launch the installation of requirements.txt and then execute:
 
-
-
-To try our software, execute:
 ```
-python3 -v1.py
-python -v1.py
+python simulate_and_predict.py -i image_name.jpg
 ```
 
 
