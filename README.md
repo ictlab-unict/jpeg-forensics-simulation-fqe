@@ -59,7 +59,7 @@ employing a constant matrix for each value between 1 and <b>max</b> (set inside 
 
 4288_2848.jpg: 4288X2484 image compressed with QF1=60 e QF2=90
 
-The JPEG files (128_128.jpg and 4288_2848.jpg) Have the first 15 quantization factors (in zig-zag order) equal to [13, 9, 10, 11, 10, 8, 13, 11, 10, 11, 14, 14, 13, 15, 19]
+The JPEG files (128_128.jpg and 4288_2848.jpg) have the first 15 quantization factors (in zig-zag order) equal to [13, 9, 10, 11, 10, 8, 13, 11, 10, 11, 14, 14, 13, 15, 19]
 
 v1.py: python file to predict the quantization factor (function get_coefficients_first_compression in the main).
 
@@ -86,6 +86,7 @@ os
 To try our software, execute:
 ```
 python3 -v1.py
+python -v1.py
 ```
 
 
