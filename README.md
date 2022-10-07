@@ -3,7 +3,7 @@
 <a style="margin-left:2%" href="https://www.ictlab.srl/"><img src="img/ictlab.png" width="20%" target="_blank"></a>
 <a href="https://iplab.dmi.unict.it/"><img src="img/iplab.png" width="9%" hspace="50" target="_blank"></a>
 <br><br>
-<h4>Computational data analysis for first quantization estimation on JPEG double compressed images</h4>
+<h2>Computational data analysis for first quantization estimation on JPEG double compressed images</h2>
 
 
 
