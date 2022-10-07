@@ -3,11 +3,11 @@
 <a style="margin-left:2%" href="https://www.ictlab.srl/"><img src="img/ictlab.png" width="20%" target="_blank"></a>
 <a href="https://iplab.dmi.unict.it/"><img src="img/iplab.png" width="9%" hspace="50" target="_blank"></a>
 <br><br>
-<hr align="center" width="90%" size="10" color="red"><br>
+
 <h1  style="font-family: Arial;  font-size: 40px;"><b>Computational data analysis for first quantization estimation on JPEG double compressed images</b></h1><br><br>
-<hr align="center" width="90%" size="10" color="red"><br>
-<font size="5px" color="black"><b><a href="https://www.micc.unifi.it/icpr2020/" target="_blank">In Proceedings of the International Conference on Pattern Recognition</a></b></font><br>
-<br><br>
+
+<div style="font-size:15px; color:black"><b><a href="https://www.micc.unifi.it/icpr2020/" target="_blank">In Proceedings of the International Conference on Pattern Recognition</a></b></div>
+<br>
 
 <font size="5px" color="black"><b>Sebastiano Battiato<sup>1,2</sup>, Oliver Giudice<sup>2,3</sup>, Francesco Guarnera<sup>1,2</sup>, Giovanni Puglisi<sup>4</sup></b></font><br>
 <br>
